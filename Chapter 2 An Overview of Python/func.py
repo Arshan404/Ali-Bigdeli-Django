@@ -52,3 +52,9 @@ print(multiply(3,5)) # 15
 
 print(multiply(3)) # 6
 """
+
+#در پایتون برای جایگزین کردن بخشی از یک رشته استفاده می‌کنیم
+
+text = "Hello World"
+new_text = text.replace("World", "Python")
+print(new_text)
