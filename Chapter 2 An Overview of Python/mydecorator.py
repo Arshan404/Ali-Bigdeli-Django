@@ -4,9 +4,9 @@ def decorator(func):
         result = func()
         print("after")
         return result
-    return wrapper()
-
+    return wrapper
+@decorator
 def hello():
     print('hello')
 
-decorator(hello)
+hello()
