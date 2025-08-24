@@ -1,8 +1,7 @@
+def decorator(func):
+    return func()
+
 def hello():
     print('hello')
 
-print(hello)
-hi = hello
-hi()
-print(hi)
-print(hello)
+decorator(hello)
