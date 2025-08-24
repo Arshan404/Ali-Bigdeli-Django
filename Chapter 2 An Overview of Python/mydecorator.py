@@ -1,5 +1,10 @@
 def decorator(func):
-    return func()
+    def wrapper():
+        print("before")
+        result = func()
+        print("after")
+        return result
+    return wrapper()
 
 def hello():
     print('hello')
